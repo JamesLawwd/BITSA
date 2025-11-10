@@ -58,18 +58,32 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const login = async (email: string, password: string) => {
-    const response = await authAPI.login({ email, password });
-    setUser(response.data.data.user);
-    if (response.data.data.token) {
-      Cookies.set('token', response.data.data.token, { expires: 7 });
+    try {
+      const response = await authAPI.login({ email, password });
+      setUser(response.data.data.user);
+      if (response.data.data.token) {
+        Cookies.set('token', response.data.data.token, { expires: 7 });
+      }
+    } catch (error: any) {
+      const message = error?.response?.data?.message || error?.message || 'Login failed';
+      const loginError: any = new Error(message);
+      loginError.response = error?.response;
+      throw loginError;
     }
   };
 
   const register = async (data: RegisterData) => {
-    const response = await authAPI.register(data);
-    setUser(response.data.data.user);
-    if (response.data.data.token) {
-      Cookies.set('token', response.data.data.token, { expires: 7 });
+    try {
+      const response = await authAPI.register(data);
+      setUser(response.data.data.user);
+      if (response.data.data.token) {
+        Cookies.set('token', response.data.data.token, { expires: 7 });
+      }
+    } catch (error: any) {
+      const message = error?.response?.data?.message || error?.message || 'Registration failed';
+      const registerError: any = new Error(message);
+      registerError.response = error?.response;
+      throw registerError;
     }
   };
 

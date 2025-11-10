@@ -42,6 +42,18 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'BITSA Hub API is running' });
 });
 
+// Error handling middleware (should be last)
+app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
+  const statusCode = err.statusCode || 500;
+  const message = err.message || 'Internal Server Error';
+
+  res.status(statusCode).json({
+    success: false,
+    message,
+    ...(process.env.NODE_ENV === 'development' && { stack: err.stack }),
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

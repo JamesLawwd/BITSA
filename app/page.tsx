@@ -11,7 +11,7 @@ export default function Home() {
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
                   <span className="block xl:inline">Welcome to</span>{' '}
-                  <span className="block text-blue-200 xl:inline">BITSA Hub</span>
+                  <span className="block text-blue-200 xl:inline">BITSA Club</span>
                 </h1>
                 <p className="mt-3 text-base text-blue-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   A modern student platform for BITSA activities, events, and community engagement.
@@ -110,7 +110,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Ready to get started?</span>
-            <span className="block text-blue-600">Join BITSA Hub today.</span>
+            <span className="block text-blue-600">Join BITSA Club today.</span>
           </h2>
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">

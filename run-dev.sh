@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# BITSA Hub Development Script
+# BITSA Club Development Script
 # This script ensures Node.js 20 is used and starts the development servers
 
 # Load nvm
@@ -30,7 +30,7 @@ else
 fi
 
 echo ""
-echo "🚀 Starting BITSA Hub..."
+echo "🚀 Starting BITSA Club..."
 echo ""
 echo "To run both servers:"
 echo "  1. Terminal 1: cd backend && npm run dev"

@@ -105,14 +105,14 @@ export const getContactInfo = async (req: AuthRequest, res: Response): Promise<v
     // This would typically come from a settings/config model
     // For now, return static contact information
     const contactInfo = {
-      email: 'contact@bitsa.org',
-      phone: '+1234567890',
-      address: 'BITSA Office, University Campus',
-      socialMedia: {
-        facebook: 'https://facebook.com/bitsa',
-        twitter: 'https://twitter.com/bitsa',
-        instagram: 'https://instagram.com/bitsa',
-        linkedin: 'https://linkedin.com/company/bitsa',
+      email: 'bitsaclub@ueab.ac.ke',
+      president: {
+        name: 'Alpha Chamba',
+        phone: '0708898899',
+      },
+      vicePresident: {
+        name: 'Gloria Jebet',
+        phone: '0725486687',
       },
     };
 

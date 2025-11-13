@@ -39,7 +39,7 @@ app.use('/api/admin', adminRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'OK', message: 'BITSA Hub API is running' });
+  res.json({ status: 'OK', message: 'BITSA Club API is running' });
 });
 
 // Error handling middleware (should be last)

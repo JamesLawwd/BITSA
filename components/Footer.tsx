@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-bold mb-4">BITSA Hub</h3>
+            <h3 className="text-lg font-bold mb-4">BITSA Club</h3>
             <p className="text-gray-400">
               A modern student platform for BITSA activities, events, and community engagement.
             </p>
@@ -39,9 +39,9 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold mb-4 uppercase tracking-wider">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: contact@bitsa.org</li>
-              <li>Phone: +1234567890</li>
-              <li>Address: BITSA Office, University Campus</li>
+              <li>Email: bitsaclub@ueab.ac.ke</li>
+              <li>President: Alpha Chamba – 0708898899</li>
+              <li>Vice President: Gloria Jebet – 0725486687</li>
             </ul>
           </div>
           <div>
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} BITSA Hub. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} BITSA Club. All rights reserved.</p>
         </div>
       </div>
     </footer>

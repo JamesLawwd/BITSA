@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BITSA Hub - Student Platform",
+  title: "BITSA Club - Student Platform",
   description: "A modern student platform for BITSA activities, events, and community engagement",
 };
 

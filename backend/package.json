@@ -1,7 +1,7 @@
 {
   "name": "bitsa-backend",
   "version": "1.0.0",
-  "description": "BITSA Hub Backend API",
+  "description": "BITSA Club Backend API",
   "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",

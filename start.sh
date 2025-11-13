@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# BITSA Hub Startup Script
+# BITSA Club Startup Script
 
-echo "🚀 Starting BITSA Hub..."
+echo "🚀 Starting BITSA Club..."
 
 # Check if MongoDB is running (optional check)
 if command -v mongod &> /dev/null; then
@@ -49,7 +49,7 @@ npm run dev &
 FRONTEND_PID=$!
 
 echo ""
-echo "✅ BITSA Hub is starting!"
+echo "✅ BITSA Club is starting!"
 echo ""
 echo "   Frontend: http://localhost:3000"
 echo "   Backend:  http://localhost:5000"

@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-blue-600">BITSA Hub</span>
+              <span className="text-2xl font-bold text-blue-600">BITSA Club</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link
